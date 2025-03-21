@@ -15,9 +15,9 @@ public class Order {
         double total = infoOrder.calculateTotal(price, quantity);
         System.out.println("Order total: $" + total);
         orderPlacer.placeOrder(customerName, address);
-
-        // Additional functionalities not required for all orders
+        
         invoiceGenerator.generateInvoice(invoiceFileName);
         emailNotifier.sendEmailNotification(email);
     }
 }
+
